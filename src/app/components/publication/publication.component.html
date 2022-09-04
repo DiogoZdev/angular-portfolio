@@ -5,7 +5,12 @@
   </div>
   <p *ngFor="let paragraph of textArray" class="text">{{ paragraph }}</p>
   <div class="link-area" *ngIf="link">
-    <a [href]="link" target="_blank">Clique aqui para saber mais</a>
+    <a [href]="link" target="_blank">
+      <div class="link-card">
+        <div class="link-icon"><mat-icon>link</mat-icon></div>
+        <div class="link-url">{{ link }}</div>
+      </div>      
+    </a>
   </div>
   <hr>
   <div class="tags-area" *ngIf="tags">

@@ -26,10 +26,11 @@ header {
       display: block;
       height: 80%;
       aspect-ratio: 1;
-      background-color: blue;
+      background-color: black;
       border-radius: 50%;
       border: solid 4px white;
       object-fit: cover;
+      overflow: hidden;
 
       img {
         height: unset;

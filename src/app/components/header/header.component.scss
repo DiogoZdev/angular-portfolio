@@ -31,9 +31,10 @@ header {
       border: solid 4px white;
       object-fit: cover;
       overflow: hidden;
+      background-size: cover;
 
       img {
-        height: unset;
+        height: 100%;
       }
     }
   }

@@ -1,0 +1,47 @@
+.publication {
+  background-color: white;
+  padding: 1rem 0;
+
+  hr {
+    margin: 1rem 0;
+    border: 1px 0 0 0;
+  }
+
+  h2 {
+    line-height: 2;
+    text-indent: 1ch;
+    padding: 0 1rem;
+  }
+
+  .image-area {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+
+    img {
+      object-fit: cover;
+    }
+  }
+
+  .link-area {
+    padding: 2rem;
+  }
+}
+
+p {
+  padding: 0.5rem 2rem;
+  text-indent: 2ch;
+}
+
+.tags-area {
+  display: flex;
+  gap: 1rem;
+  padding: 0 1rem;
+
+  .tag {
+    padding: 5px 10px;
+    border-radius: 30px;
+    background-color: hsl(76, 79%, 74%);
+    color: hsl(76, 100%, 18%);
+  }
+}

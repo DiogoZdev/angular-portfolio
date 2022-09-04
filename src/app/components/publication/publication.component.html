@@ -1,0 +1,16 @@
+<div class="publication" rounded shadow>
+  <h2>{{ title }}</h2><br>
+  <div class="image-area">
+    <img [src]="image">    
+  </div>
+  <p *ngFor="let paragraph of textArray" class="text">{{ paragraph }}</p>
+  <div class="link-area" *ngIf="link">
+    <a [href]="link" target="_blank">Clique aqui para saber mais</a>
+  </div>
+  <hr>
+  <div class="tags-area" *ngIf="tags">
+    <span class="tag" *ngFor="let t of tagsArray">
+      {{ t }}
+    </span>
+  </div>
+</div>

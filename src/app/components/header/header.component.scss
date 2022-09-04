@@ -1,0 +1,67 @@
+header {
+  width: 100%;
+  height: 350px;
+  background-color: white;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+
+  * {
+    height: 50%;
+    width: 100%;
+  }
+
+  .cover {
+    background: var(--blue-light);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    position: relative;
+
+    .photo {
+      position: absolute;
+      top: 40%;
+      left: 1rem;
+      width: unset;
+      display: block;
+      height: 80%;
+      aspect-ratio: 1;
+      background-color: blue;
+      border-radius: 50%;
+      border: solid 4px white;
+      object-fit: cover;
+
+      img {
+        height: unset;
+      }
+    }
+  }
+
+  .info {
+    padding: 3rem 1rem;
+    display: block;
+    position: relative;
+
+    h1,h2 {
+      height: unset;
+    }
+  }
+}
+
+.buttons {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 1rem;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  width: min-content !important;
+  height: fit-content !important;
+  // background-color: red;
+
+  button {
+    width: 100px;
+    height: 40px;
+  }
+}

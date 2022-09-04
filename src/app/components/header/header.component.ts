@@ -20,8 +20,10 @@ export class HeaderComponent implements OnInit {
     const num = Math.floor(Math.random()*this.backgrounds.length);
 
     let el = document.getElementById("background");
+    el ? el.style.backgroundImage = `url(${this.backgrounds[num]})`: "";
 
-    el ? el.style.backgroundImage = `url(${this.backgrounds[num]})`: '';
+    let me = document.getElementById("photo");
+    me ? me.style.backgroundImage = "url(https:github.com/diogozdev.png)": "";
   }
 
 }

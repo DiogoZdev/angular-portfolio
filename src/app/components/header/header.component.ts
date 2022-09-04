@@ -25,5 +25,4 @@ export class HeaderComponent implements OnInit {
     let me = document.getElementById("photo");
     me ? me.style.backgroundImage = "url(https://github.com/diogozdev.png)": "";
   }
-
 }

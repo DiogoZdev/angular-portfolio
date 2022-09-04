@@ -23,7 +23,7 @@ export class HeaderComponent implements OnInit {
     el ? el.style.backgroundImage = `url(${this.backgrounds[num]})`: "";
 
     let me = document.getElementById("photo");
-    me ? me.style.backgroundImage = "url(https:github.com/diogozdev.png)": "";
+    me ? me.style.backgroundImage = "url(https://github.com/diogozdev.png)": "";
   }
 
 }

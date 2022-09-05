@@ -10,7 +10,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatIconModule } from "@angular/material/icon";
 import { InfoComponent } from './components/info/info.component';
 import { ProjectsComponent } from './views/projects/projects.component';
-import { AboutComponent } from './views/about/about.component'
+import { AboutComponent } from './views/about/about.component';
+import { BlogComponent } from './views/blog/blog.component'
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { AboutComponent } from './views/about/about.component'
     PublicationComponent,
     InfoComponent,
     ProjectsComponent,
-    AboutComponent
+    AboutComponent,
+    BlogComponent
   ],
   imports: [
     BrowserModule,

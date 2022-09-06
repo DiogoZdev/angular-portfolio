@@ -4,7 +4,23 @@
   <div *ngIf="image" class="image-area">
     <img [src]="image">    
   </div>
-  <p *ngFor="let paragraph of textArray" class="text">{{ paragraph }}</p>
+  <div *ngIf="longText" pad-x [class]="textClassesString">
+    <p *ngFor="let paragraph of textArray" class="text">{{ paragraph }}</p>
+  </div>
+
+  <div pad-x *ngIf="!longText">
+    <p *ngFor="let paragraph of textArray" class="text">{{ paragraph }}</p>
+  </div>
+  
+
+  <div class="read-more-area">
+    <button *ngIf="longText" class="button-primary"
+    (click)="toggleShowPost()"
+  >
+    {{ !showLongText ? 'Ver mais' : 'Ver menos' }}
+  </button>
+  </div>
+
   <div class="link-area" *ngIf="link">
     <a [href]="link" target="_blank">
       <div class="link-card">

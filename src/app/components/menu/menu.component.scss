@@ -21,6 +21,20 @@ nav {
       font-size: 18px;
     }
 
+    .theme-icon {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      font-size: 11px;
+      cursor: pointer;
+    }
+
+    .unset {
+      color: unset;
+      background-color: unset;
+      border: unset         ;
+    }
+
     .icons {
       width: fit-content;
       height: 100%;

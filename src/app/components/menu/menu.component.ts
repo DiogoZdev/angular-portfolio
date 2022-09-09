@@ -10,6 +10,17 @@ export class MenuComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    const darkTheme = localStorage.getItem("dark");
+    if (darkTheme) this.toggleTheme();
+  }
+
+  toggleTheme() {
+    document.body.classList.toggle("dark");
+    if (document.body.classList.contains("dark")) {
+      localStorage.setItem("dark", "true");
+    } else {
+      localStorage.removeItem("dark");
+    }
   }
 
 }

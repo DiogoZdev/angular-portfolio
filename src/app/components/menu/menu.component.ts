@@ -7,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MenuComponent implements OnInit {
 
+  public notification = false;
+  public dark = false;
+
   constructor() { }
 
   ngOnInit(): void {
@@ -18,9 +21,14 @@ export class MenuComponent implements OnInit {
     document.body.classList.toggle("dark");
     if (document.body.classList.contains("dark")) {
       localStorage.setItem("dark", "true");
+      this.dark = true;
     } else {
       localStorage.removeItem("dark");
+      this.dark = false;
     }
   }
 
+  toggleNotification() {
+    this.notification = !this.notification;
+  }
 }

@@ -4,7 +4,6 @@
 :root {
   --blue-light: hsl(215, 30%, 50%);
   --blue: hsl(215, 100%, 25%);
-  --gray: hsl(220, 8%, 16%);
 }
 
 * {
@@ -21,9 +20,13 @@ html, body {
 }
 
 body {
+
+  --menu-bg: hsl(220, 8%, 16%);
+  --menu-color: #fff;
+
   --text-color: #000;
-  --bg-color: #fff;
-  --bg-color-deep: rgb(240, 239, 239);
+  --bg-color: hsl(0, 100%, 97%);
+  --bg-color-deep: hsl(340, 18%, 87%);
 
   --btn-main-bg: hsl(220, 8%, 16%);
   --btn-main-color: white;
@@ -33,12 +36,19 @@ body {
 
   --tag-bg: hsl(88, 56%, 70%);
   --tag-color: hsl(88, 100%, 10%);
+
+  --link: hsl(22, 87%, 45%);
+  --link-bg: #ccc;
+  --link-border: #555;
 }
 
 body.dark {
+  --menu-bg: hsl(0, 0%, 0%);
+  --menu-color: #ddd;
+
   --text-color: rgb(187, 187, 187);
-  --bg-color: #191c1f;
-  --bg-color-deep: #0b1218;
+  --bg-color: hsl(208, 10%, 10%);
+  --bg-color-deep: hsl(208, 30%, 15%);
 
   --btn-main-bg: hsl(0, 0%, 0%);
   --btn-main-color: rgb(187, 187, 187);
@@ -48,6 +58,13 @@ body.dark {
 
   --tag-bg: hsl(88, 100%, 10%);
   --tag-color: hsl(88, 56%, 70%);
+
+  --link-bg: #ccc;
+  --link-border: #555;
+
+  * {
+    box-shadow: none;
+  }
 
   img {
     filter: grayscale(50%) brightness(60%);
@@ -81,7 +98,7 @@ h3 {
 } 
  
 a, a:visited, a:hover, a:active {
-  color: rgb(255, 60, 0);
+  color: var(--link);
 }
 
 [rounded] {
@@ -93,6 +110,8 @@ a, a:visited, a:hover, a:active {
 }
 
 button {
+  color: unset;
+  background-color: unset;
   border: none;
   border-radius: 5px;
   font-weight: bold;
@@ -113,4 +132,8 @@ button {
   cursor: pointer;
   background-color: var(--btn-sec-bg);
   color: var(--btn-sec-color);
+}
+
+a {
+  text-decoration: none;
 }

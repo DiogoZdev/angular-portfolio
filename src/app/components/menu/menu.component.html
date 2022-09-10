@@ -1,32 +1,38 @@
 <nav>
   <div class="center">
-    <h1>Diogo Lara - Dev</h1>
+    <h1>Diogo Lara</h1>
 
-    <button class="theme-icon unset" (click)="toggleTheme()">
-      <mat-icon>dark_mode</mat-icon>
-      <span>tema</span>
-    </button>
+    <div class="action-buttons">
+      <button class="theme-icon" (click)="toggleTheme()">
+        <mat-icon>{{ dark ? 'dark_mode' : 'light_mode' }}</mat-icon>
+        <span>tema</span>
+      </button>
+  
+      <!-- TODO: prepare achievements
+      <button class="theme-icon" (click)="toggleNotification()">
+        <mat-icon>workspace_premium
+          <div class="alert" *ngIf="notification"></div>
+        </mat-icon>
+        <span>conquistas</span>
+      </button> 
+      -->
+    </div>
 
     <div class="icons">
-      <a routerLink="/" class="icon">
+      <button routerLink="/" class="icon">
         <mat-icon>home</mat-icon>
         <span>home</span>
-      </a>
-
-      <!-- <div class="icon">
-        <mat-icon>notifications</mat-icon>
-        <span>notificações</span>
-      </div> -->
+      </button>
       
-      <a routerLink="projects" class="icon">
+      <button routerLink="projects" class="icon">
         <mat-icon>computer</mat-icon>
         <span>projetos</span>
-      </a>
+      </button>
 
-      <a routerLink="blog" class="icon">
+      <button routerLink="blog" class="icon">
         <mat-icon>web</mat-icon>
         <span>blog</span>
-      </a>
+      </button>
     </div>
   </div>
 </nav>

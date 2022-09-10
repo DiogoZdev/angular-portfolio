@@ -41,7 +41,6 @@
     padding: 2rem;
 
     a {
-      display: unset;
       text-decoration: none;
       width: min-content;
     }
@@ -51,9 +50,6 @@
       width: 250px;
       display: flex;
       flex-direction: row;
-      border: solid 2px grey;
-      border-radius: 8px;
-      overflow: hidden;
 
       .link-icon {
         display: flex;
@@ -61,24 +57,25 @@
         align-items: center;
         width: 40px;
         height: 40px;
-        background-color: #d6d6d6;
-        color: #777;
-        border-right: solid 2px grey;
+        color: #333;
 
         mat-icon {
           font-size: 22px;
           transform: rotate(-45deg) translateX(3px);
+          color: var(--link);
         }
       }
 
       .link-url {
         font-size: 14px;
-        max-width: 25ch;
+        max-width: 30ch;
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: nowrap;
         line-height: 2.5;
         text-indent: 1ch;
+        text-decoration: underline;
+        text-underline-offset: 4px;
       }
     }
   }

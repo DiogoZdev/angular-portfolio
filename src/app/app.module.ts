@@ -11,7 +11,8 @@ import { MatIconModule } from "@angular/material/icon";
 import { InfoComponent } from './components/info/info.component';
 import { ProjectsComponent } from './views/projects/projects.component';
 import { AboutComponent } from './views/about/about.component';
-import { BlogComponent } from './views/blog/blog.component'
+import { BlogComponent } from './views/blog/blog.component';
+import { AchievementsComponent } from './components/achievements/achievements.component'
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { BlogComponent } from './views/blog/blog.component'
     InfoComponent,
     ProjectsComponent,
     AboutComponent,
-    BlogComponent
+    BlogComponent,
+    AchievementsComponent
   ],
   imports: [
     BrowserModule,

@@ -1,6 +1,7 @@
 <div class="publication" rounded shadow>
   <h3 class="date" *ngIf="date"><mat-icon>today</mat-icon>{{ date }}</h3>
-  <h2>{{ title }}</h2><br>
+  <h2>{{ title }}</h2>
+  <br>
   <div *ngIf="image" class="image-area">
     <img [src]="image">    
   </div>

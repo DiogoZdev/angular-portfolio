@@ -25,10 +25,11 @@ body {
   --menu-color: #fff;
 
   --text-color: #000;
-  --bg-color: hsl(0, 100%, 97%);
-  --bg-color-deep: hsl(340, 18%, 87%);
+  
+  --bg-color: #fff;
+  --bg-color-deep: #d5d5d5;
 
-  --btn-main-bg: hsl(220, 8%, 16%);
+  --btn-main-bg: hsl(220, 7%, 16%);
   --btn-main-color: white;
 
   --btn-sec-bg: #ddd;
@@ -37,6 +38,9 @@ body {
   --tag-bg: hsl(88, 56%, 70%);
   --tag-color: hsl(88, 100%, 10%);
 
+  --border: solid 2px;
+  --fancy-border: linear-gradient(90deg, #008da6 5%, #ffa600 50%, #bb005f 95%) 1 stretch;
+  
   --link: hsl(22, 87%, 45%);
   --link-bg: #ccc;
   --link-border: #555;
@@ -134,6 +138,11 @@ button {
   color: var(--btn-sec-color);
 }
 
+hr {
+  border-top: var(--border);
+  border-image: var(--fancy-border);
+}
+  
 a {
   text-decoration: none;
 }
